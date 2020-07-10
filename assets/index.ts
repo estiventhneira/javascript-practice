@@ -1,6 +1,6 @@
-import MediaPlayer from "./MediaPlayer.js";
-import AutoPlay from "./plugins/AutoPlay.js";
-import AutoPause from "./plugins/AutoPause.js";
+import MediaPlayer from "./MediaPlayer";
+import AutoPlay from "./plugins/AutoPlay";
+import AutoPause from "./plugins/AutoPause";
 
 const video = document.querySelector("video");
 const player = new MediaPlayer({
@@ -8,7 +8,7 @@ const player = new MediaPlayer({
   plugins: [new AutoPlay(), new AutoPause()],
 });
 
-const Playbtn = document.getElementById("Play-Pause");
+const Playbtn: HTMLElement = document.getElementById("Play-Pause");
 Playbtn.onclick = function () {
   if (player.media.paused) {
     return player.play();
@@ -17,7 +17,7 @@ Playbtn.onclick = function () {
   }
 };
 
-const Mutedbtn = document.getElementById("muted");
+const Mutedbtn: HTMLElement = document.getElementById("muted");
 
 Mutedbtn.onclick = function () {
   if (player.media.muted) {
