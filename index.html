@@ -19,35 +19,135 @@
         <source src="./assets/BigBuckBunny.mp4" />
       </video>
 
-      <button>Play/Pause</button>
+      <button id="Play-Pause">Play/Pause</button>
+      <button id="muted">Mute</button>
     </main>
+    <div>
+      <h1>Comentarios</h1>
+      <ul>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+        <li>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            repudiandae voluptates culpa assumenda quos, eligendi veritatis
+            nostrum consequatur earum placeat repellendus ipsa necessitatibus,
+            fugit odio corporis, officiis laboriosam accusantium temporibus!
+          </p>
+        </li>
+      </ul>
+    </div>
 
-    <script>
-      function MediaPlayer(config) {
-        this.media = config.el;
-      }
-
-      MediaPlayer.prototype.play = function() {
-        this.media.play();
-      };
-
-      MediaPlayer.prototype.pause = function() {
-        this.media.pause();
-      };
-
-      MediaPlayer.prototype.togglePlay = function() {
-        if (this.media.paused) {
-          this.play();
-        } else {
-          this.pause();
-        }
-      };
-
-      const video = document.querySelector('video');
-      const player = new MediaPlayer({ el: video });
-
-      const button = document.querySelector('button');
-      button.onclick = () => player.togglePlay();
-    </script>
+    <script type="module" src="./assets/index.js"></script>
   </body>
 </html>
