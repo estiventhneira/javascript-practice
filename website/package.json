@@ -18,5 +18,7 @@
   "browserslist": [
     "last 1 chrome version"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@estiventhneira/mediaplayer": "^1.0.0"
+  }
 }
